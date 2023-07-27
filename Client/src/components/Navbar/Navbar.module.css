@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+ * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Creepster', cursive;
+  font-size: 16px;
+  
+}
+ .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(62, 194, 62);
+  height: 40px;
+  padding: 5px 10%;
+  z-index: 10;
+}
+ .nav {
+  display: flex;
+  justify-content: flex-start;
+  
+ 
+}
+ .logo {
+  background-image: url("./logo.gif");
+  background-size: contain;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 40px;
+  animation: logoAnimation 6s ease-in-out infinite;
+  z-index: 100;
+}
+
+.gifAbout{
+background-image: url("../About//portal.gif");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+padding: 8px;
+
+
+
+}
+.centeredLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ @keyframes logoAnimation {
+  0% {
+    transform: translateX(0);
+  }
+   100% {
+    transform: translateX(100%);
+  }
+}
+ .navLinks {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin-right: auto;
+  z-index: 200;
+}
+ .navLinks li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.searchContainer{
+  z-index: 210;
+}
+
+.font{
+text-decoration: none; 
+  color: rgb(7, 44, 9);
+}

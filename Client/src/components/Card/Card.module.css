@@ -1,0 +1,56 @@
+.cartaContainer {
+  background-color: #043c6ee3; /* Color de fondo */
+  color: #88e23b; /* Color de texto */
+  border: px solid #ffffff; /* Borde de 2px sólido blanco */
+  border-radius: 15px; /* Borde redondeado */
+  width: 200px;
+  padding: 13px;
+  font-family: "Rick and Morty", sans-serif; /* Fuente de Rick and Morty */
+  font-size: 13px;
+
+animation: shadow-animation 3s ease infinite;
+}
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0 0 15px #ebe480; /* Sombra inicial */
+  }
+  33% {
+    box-shadow: 0 0 15px #8cd790; /* Primera sombra */
+  }
+  66% {
+    box-shadow: 0 0 15px #d76d6d; /* Segunda sombra */
+  }
+  100% {
+    box-shadow: 0 0 15px #ebe480; /* Sombra inicial */
+  }
+}
+
+
+
+
+.cartaContainer button {
+  color: #ffffff;
+  background-color: #a8901a;
+  
+ width: 32px;
+ border: 1px solid #010101;
+  border-radius: 30%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cartaContainer h1,
+.cartaContainer h3 {
+  margin: 10px 0;
+}
+
+.cartaContainer a {
+  color: #88e23b;
+  text-decoration: none;
+}
+
+.cartaContainer img {
+  max-width: 100%;
+  border-radius: 10px; /* Borde redondeado para la imagen */
+}
