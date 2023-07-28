@@ -1,5 +1,4 @@
- export const validation = (datos) => {
-   
+export const validation = (datos) => {
   const emailRegex= new RegExp(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i)
 
   const passwordRegex= new RegExp(/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/)
@@ -27,4 +26,3 @@
   
     return errors;
  }
-

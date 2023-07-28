@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import Detail from "./components/Deatil/Deatil";
 import Form from "./Form/Form";
 import Favorites from "./components/Favorites/Favorites"
-
+import "./App.css"
 
 function App() {
 

@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./rick.jpg');
+  background-size: cover;
+}
+
+.login {
+  border: 1px solid black;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #78a8568f; /* Fondo celeste */
+  border-radius: 100px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('./fotoLog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Alinea todo el contenido al final */
+  gap: 10px;
+  flex-grow: 1; /* Para que ocupe todo el espacio disponible */
+  width: 100%; /* Ocupar todo el ancho disponible */
+}
+
+/* Estilos para dispositivos de pantalla estrechos (responsive) */
+@media (max-width: 600px) {
+  .login {
+    width: 80%;
+    height: auto;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
