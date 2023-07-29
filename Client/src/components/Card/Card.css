@@ -1,4 +1,5 @@
- 
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 .square {
   position: relative;
   width: 250px;
@@ -35,19 +36,19 @@
   z-index: 1;
 }
  .square i:nth-child(1) {
-  border-radius: 32% 62% 63% 37% / 41% 44% 56% 59%;
-  animation: animate 2s linear infinite;
+  border-radius: 32% 37% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 1.2s linear infinite;
   border-color: #fb6467ff;
 }
  .square i:nth-child(2) {
   border-radius: 41% 44% 56% 59%/ 38% 62% 63% 37%;
-  animation: animate 1.6s linear infinite;
+  animation: animate 2s linear infinite;
   border-color: #e89ac7;
 }
  .square i:nth-child(3) {
   border-radius: 60% 42% 55% 49%/ 38% 62% 63% 37%;
-  animation: animate 3s linear infinite;
-  border-color: #44281d;
+  animation: animate 2.3s linear infinite;
+  border-color: #985d46;
 }
  @keyframes animate {
   0% {
@@ -58,8 +59,8 @@
   }
 }
  .square img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   transition: filter 0.5s;
 }
@@ -81,6 +82,7 @@
 }
  .square:hover h3 {
   opacity: 1;
+  font-family: 'Creepster';
 
 }
  .square button {

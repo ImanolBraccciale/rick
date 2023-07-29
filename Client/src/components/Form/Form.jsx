@@ -32,7 +32,7 @@ function Form({ login }) {
   };
 
   return (
-    <div className='container'>
+    <div className='containerForm'>
       <div className='login'>
         <div className='avatar'></div>
         <form onSubmit={handleSubmit}>

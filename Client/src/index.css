@@ -1,5 +1,12 @@
+ 
 body{
-    background-image: url("./fondoHome.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url("./nar.png");
+     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }

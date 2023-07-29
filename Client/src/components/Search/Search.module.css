@@ -4,6 +4,7 @@
 }
 
 .searchInput {
+  font-family: 'Creepster';
   background-color: #a6cccc;
    margin-right: 10px;
   color: #fff;
@@ -19,6 +20,7 @@
 }
 
 .searchButton {
+ font-family: 'Creepster';
   background-color: #f0e14a;
   color: #44281d;
   border: none;

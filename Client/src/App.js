@@ -5,7 +5,7 @@ import  axios  from "axios";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import About from "./components/About/About";
 import Detail from "./components/Deatil/Deatil";
-import Form from "./Form/Form";
+import Form from "./components/Form/Form";
 import Favorites from "./components/Favorites/Favorites"
 import "./App.css"
 

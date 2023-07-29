@@ -1,40 +1,46 @@
 import axios from "axios";
-import {useParams  } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./detail.css"
 
-export default function Deatil({p}) {
+export default function Deatil() {
 
   const [character, setCharacter] = useState({})
-  const {id} = useParams()
+  const { id } = useParams()
 
-    useEffect(() => {
-   axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+  useEffect(() => {
+    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
-         setCharacter(data);
+        setCharacter(data);
       } else {
-         window.alert('No hay personajes con ese ID');
+        window.alert('No hay personajes con ese ID');
       }
-   });
-   return setCharacter({});
-}, [id]);
+    });
+    return setCharacter({});
+  }, [id]);
 
   return (
-    
+
     (
-      <div className="detail">
-        <div className="text">
-          <h3>Id: {id}</h3>
-          <h1>{character.name}</h1>
-          <h2>Status: {character.status}</h2>
-          <p>Specie: {character.species}</p>
-          <p>Gender: {character.gender}</p>
-          <p>Origin: {character.origin?.name}</p>
-        </div>
-        <div className="img">
-          <img src={character.image} alt={character.name}></img>
+      <div className='Container_'>
+
+        <div className="containerDetail">
+          <div class="datos-persona">
+            <div className="papel-pautado">
+              <h1 className="label">{character.name}</h1>
+              <p>Id: {id}</p>
+              <p>Status: {character.status}</p>
+              <p>Specie: {character.species}</p>
+              <p>Gender: {character.gender}</p>
+              <p>Origin: {character.origin?.name}</p>
+            </div>
+            <div className="avatarDetail">
+              <img src={character.image} alt={character.name}></img>
+            </div>
+          </div>
         </div>
       </div>
     )
   );
 }
-  
+

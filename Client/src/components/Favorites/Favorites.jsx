@@ -5,7 +5,7 @@ import React from "react";
 import { connect, useDispatch } from "react-redux";
 import Card from "../Cards/Cards";
 import { filterCard, orderCards } from "../../redux/actions";
-
+import "./favorites.css"
 const Favorites = ({ myFavorites }) => {
   const dispatch = useDispatch();
 
@@ -18,7 +18,7 @@ const Favorites = ({ myFavorites }) => {
   };
 
   return (
-    <div>
+    <div className='aaaa'>
       <select onChange={handleOrder}>
         <option value="A">Ascendente</option>
         <option value="D">Descendente</option>
