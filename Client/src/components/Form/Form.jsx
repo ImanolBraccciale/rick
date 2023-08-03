@@ -45,11 +45,11 @@ function Form({ login }) {
               value={data.email}
             />
           </div>
-          <div>
+          <div className='error'>
             {errors.email && <span>{errors.email}</span>}
           </div>
-          <div>
-            <label htmlFor="password">Contraseña:</label>
+          <div className="passwordForm">
+            <label htmlFor="password">password:</label>
             <input
               type="password"
               onChange={handleChange}
@@ -57,10 +57,16 @@ function Form({ login }) {
               value={data.password}
             />
           </div>
-          <div>
+          <div className='error'>
             {errors.password && <span>{errors.password}</span>}
-          </div>
-          <button type="submit">Enviar</button>
+          </div >
+
+          <button
+            disabled={errors.password || errors.email}
+            className='buttonForm'
+            type="submit"
+          >Enviar</button>
+
         </form>
       </div>
     </div>

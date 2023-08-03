@@ -7,16 +7,18 @@
   font-family: 'Creepster';
   background-color: #a6cccc;
    margin-right: 10px;
-  color: #fff;
+  color: #000000cd;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
   font-size: 16px;
+    border: 1px solid black;
 }
 
 .searchInput:focus {
   outline: none;
   box-shadow: 0 0 5px #e4a788;
+  
 }
 
 .searchButton {
@@ -29,6 +31,7 @@
   font-size: 16px;
   cursor: pointer;
   margin-left:0px;
+  border: 1px solid black;
 }
 
 .searchButton:hover {

@@ -17,12 +17,12 @@ export default function NavBar({ onSearch }) {
           </li>
           <li>
             <Link to="/home" className={styles.font} >
-              Inicio
+              Home
             </Link>
           </li>
           <li>
             <Link to="/favorites" className={styles.font} >
-              Favoritos
+              Favorites
             </Link>
           </li>
         </ul>

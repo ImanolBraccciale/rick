@@ -1,31 +1,27 @@
-const http = require('http')
-const getCharById=require('./controllers/getCharById')
-const characters = require("../utils/data")
+ const express= require("express")
+ const server = express()
+ const router = require('./routes/index')
+ const PORT =3001
 
-http.createServer((req,res) => {
-res.setHeader("Access-Control-Allow-Origin", "*")
-if (req.url.includes("/rickandmorty/character")) {
+server.use(express.json()) //la info que llega en json lo pasa a js
 
-  const id= req.url.split("/").at(-1)
-  //el filter devuelve un array d e objeto, mientras que el find  devuelve el primer objeto que encuentra
-  const characterFind = characters.find( (character) => character.id === Number(id))
-
-  res.writeHead (200, {"Contex-type" : "application/json"})
-  res.end(JSON.stringify(characterFind))
-
-}
-}).listen(3001, console.log(("puerto mostrandose")))
-
- http.createServer((req, res) => {
-  if (req.url.includes('/rickandmorty/character')) {
-    // Obtener el ID del personaje de la URL (por ejemplo, /rickandmorty/character/1)
-    const id = req.url.split('/').pop();
-
-    // Llamar al controlador getCharById pasando res y el id del personaje como argumentos
-    getCharById(res, id);
-  } else {
-    // Si la URL no coincide con /rickandmorty/character, enviar una respuesta 404
-    res.writeHead(404, { 'Content-Type': 'text/plain' });
-    res.end('Not Found');
-  }
+server.use((req, res, next) => {
+   res.header('Access-Control-Allow-Origin', '*');
+   res.header('Access-Control-Allow-Credentials', 'true');
+   res.header(
+      'Access-Control-Allow-Headers',
+      'Origin, X-Requested-With, Content-Type, Accept'
+   );
+   res.header(
+      'Access-Control-Allow-Methods',
+      'GET, POST, OPTIONS, PUT, DELETE'
+   );
+   next();
 });
+
+server.use("/rickandmorty", router)
+
+ server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+ })
+ 

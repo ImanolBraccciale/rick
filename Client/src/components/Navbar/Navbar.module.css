@@ -16,6 +16,7 @@
   z-index: 10;
     font-family: 'Creepster', cursive;
   font-size: 16px;
+  border: 1px solid black;
 }
  .nav {
   display: flex;
@@ -25,13 +26,16 @@
  
 }
  .logo {
+  display: flex;
+  position: absolute;
+  left: -3%;
   background-image: url("./logo.gif");
   background-size: contain;
   margin-top: 10px;
   background-repeat: no-repeat;
-  width: 700px;
+  width: 525.5px;
   height: 40px;
-  animation: logoAnimation 6s ease-in-out infinite;
+ animation: logoAnimation 7.8s infinite ease-in-out;  
   z-index: 100;
 }
 

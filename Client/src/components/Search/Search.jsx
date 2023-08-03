@@ -20,10 +20,10 @@ export default function Search({ onSearch }) {
         onChange={handleChange}
         value={id}
         className={styles.searchInput}
-        placeholder='Ingresa un numero...'
+        placeholder=' Enter a number...'
       />
       <button onClick={handleClick} className={styles.searchButton}>
-        Buscar
+        Search
       </button>
     </div>
   );

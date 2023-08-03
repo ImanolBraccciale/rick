@@ -18,6 +18,8 @@ const Favorites = ({ myFavorites }) => {
   };
 
   return (
+
+
     <div className='aaaa'>
       <select onChange={handleOrder}>
         <option value="A">Ascendente</option>
@@ -38,6 +40,7 @@ const Favorites = ({ myFavorites }) => {
         <Card characters={myFavorites} />
       )}
     </div>
+
   );
 };
 

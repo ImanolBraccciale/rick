@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.container {
+.containerAbout {
   
   width: 53%;
   height: 100vh;
@@ -14,13 +14,13 @@
   position: relative; 
 }
 
-.elements{
+.elementsAbout{
   display: relative;
   align-items: center;
   justify-items: center;
   row-gap: 30px;
 }
-.perfil{
+.perfilAbout{
     background-image: url("./perfil.png");
    background-size: 340px;
    background-position: center;
@@ -32,7 +32,7 @@
    left: 50%; 
   transform: translate(-50%, -50%);
 }
-.portal {
+.portalAbout {
   background-image: url("./portal.gif");
   background-position: center;
   background-size: cover;
@@ -42,7 +42,7 @@
 
 }
 
-.fondo{
+.fondoAbout{
   
   background-image: url("./fondo.webp");
   background-position: center;
@@ -52,12 +52,12 @@
   position: relative;
 }
 
-.titulo {
+.tituloAbout {
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
 }
-.parrafo {
+.parrafoAbout {
   border: #1a3b0587 solid 1px;
   border-color: #000000 solid ;
   background-color: #3a8e5db8;

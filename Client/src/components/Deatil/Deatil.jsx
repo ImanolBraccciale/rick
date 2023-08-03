@@ -25,7 +25,7 @@ export default function Deatil() {
       <div className='Container_'>
 
         <div className="containerDetail">
-          <div class="datos-persona">
+          <div className="datos-persona">
             <div className="papel-pautado">
               <h1 className="label">{character.name}</h1>
               <p>Id: {id}</p>

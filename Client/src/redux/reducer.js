@@ -13,8 +13,8 @@ const reducer = (state = initialState, { type, payload }) => {
       if (!state.myFavorites.some((fav) => fav.id === payload.id)) {
         return {
           ...state,
-          myFavorites: [...state.myFavorites, payload],
-          allCharactersFav: [...state.allCharactersFav, payload]
+          myFavorites:   payload,
+          allCharactersFav:  payload
         };
       }
       return state;
@@ -22,8 +22,8 @@ const reducer = (state = initialState, { type, payload }) => {
     case REMOVE_FAV:
       return {
         ...state,
-        myFavorites: state.myFavorites.filter((fav) => fav.id !== payload),
-        allCharactersFav: state.allCharactersFav.filter((fav) => fav.id !== payload)
+        myFavorites: payload,
+       allCharactersFav:payload
       };
 
     case FILTER:

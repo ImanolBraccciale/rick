@@ -35,11 +35,11 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose, addFa
 
       <button className="heart" onClick={handleFavorite}>{isFav ? "❤️" : "🧡"}</button>
       {!pathname.includes("/favorites") && (
-        <button className="close" onClick={() => onClose(id)}>X</button>
+        <button className="close" onClick={() => onClose(id)}>❌</button>
       )}
 
       <Link to={`/detail/${id}`}>
-        <h3 >Nombre: {name} </h3>
+        <h3 > {name} </h3>
       </Link>
       {/* Resto de la información del personaje */}
       <img src={image} alt="imagen" />
