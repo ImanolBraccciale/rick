@@ -33,9 +33,9 @@
   background-size: contain;
   margin-top: 10px;
   background-repeat: no-repeat;
-  width: 525.5px;
+  width: 59.3%;
   height: 40px;
- animation: logoAnimation 7.8s infinite ease-in-out;  
+  animation: logoAnimation 9s infinite linear;  
   z-index: 100;
 }
 
@@ -45,9 +45,6 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 padding: 8px;
-
-
-
 }
 .centeredLink {
   display: flex;

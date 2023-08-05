@@ -1,5 +1,58 @@
-.aaaa{
+.aaaa {
   background-image: url("./fondoHome.jpg");
-   background-size: cover;
+  background-size: cover;
   height: 100vh;
+ 
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+   justify-content: space-around;
+   
+}
+
+.aaaa select:first-child {
+  /* Add any additional styling for the selects if needed */
+  margin: 5px;
+  background-color: #dcdcd9;
+ border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  
+}
+
+.aaaa select {
+  /* Add any additional styling for the selects if needed */
+  margin: 5px;
+  background-color: #dcdcd9;
+ border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  
+}
+
+.aaaa select option {
+  /* Add any additional styling for the options if needed */
+  padding: 8px;
+  font-size: 14px;
+ background-color: #2222;
+  color: #333;
+}
+
+.emptyFav{
+  display: flex;
+ place-content: center;
+ font-size:larger;
+ color:#282424;
+ margin-top: 200px;
+
 }
